@@ -1,4 +1,4 @@
-package CW.lessons_1.getAll;
+package CW.lesson_1.getAll;
 
 import java.sql.*;
 import java.util.ArrayList;

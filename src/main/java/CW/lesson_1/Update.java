@@ -1,4 +1,4 @@
-package CW.lessons_1;
+package CW.lesson_1;
 
 import java.sql.*;
 

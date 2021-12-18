@@ -1,4 +1,4 @@
-package CW.lessons_1.getAll;
+package CW.lesson_1.getAll;
 
 public class Personnals {
     private int id;
