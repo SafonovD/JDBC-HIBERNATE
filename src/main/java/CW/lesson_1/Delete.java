@@ -10,7 +10,7 @@ public class Delete {
     private static final String LOGIN = "root";
     private static final String PASSWORD = "root";
 
-    private static final String DELETE_CLIENTS = "DELETE FROM clients where id = ?";
+    private static final String DELETE_CLIENTS = "DELETE FROM clients where id = ? and Fullname = ?";
 
     public static void main(String[] args) {
 
@@ -23,9 +23,11 @@ public class Delete {
             connection = DriverManager.getConnection(URL,LOGIN,PASSWORD);
             statement = connection.prepareStatement(DELETE_CLIENTS);
 
-            statement.setInt(1,10);
+            statement.setInt(1,1);
+            statement.setString(2,"Попов Иван Иванович");
 
-            statement.execute();
+            int res = statement.executeUpdate();
+            System.out.println(res);
 
         }catch (SQLException e){
             e.printStackTrace();

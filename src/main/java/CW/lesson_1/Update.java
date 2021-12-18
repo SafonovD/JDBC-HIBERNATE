@@ -25,11 +25,13 @@ public class Update {
          //   statement.setInt(4,180);
          //   statement.setInt(1,9);
 
-           statement.setInt(2,256);
+           statement.setInt(4,256);
            statement.setInt(1,9);
 
 
-            statement.execute();
+            int res = statement.executeUpdate();
+            System.out.println(res);
+
 
         }catch (SQLException e){
             e.printStackTrace();
