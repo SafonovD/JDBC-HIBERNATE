@@ -8,11 +8,14 @@ import org.hibernate.cfg.Configuration;
 
 import java.util.List;
 import java.util.Scanner;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 
 public class Main {
 
     private static SessionFactory sessionFactory;
+
     public static void main(String[] args) {
 Scanner sc = new Scanner(System.in);
         sessionFactory = new Configuration()
